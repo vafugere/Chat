@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chat</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="flex-center">
+            <div class="border">
+                <div class="flex-end"><a href="/logout"><img src="images/icons/logout.png" height="24" width="24"></a></div>
+                <div class="messages" id="messages">
+                </div>
+                <form id="chat-form" class="justify-center">
+                    <div class="wrapper-chat">
+                    <input type="text" id="m" class="input-chat" autocomplete="off" placeholder="Type a message..." required>
+                    <button type="submit" class="btn-chat">
+                        <img src="images/icons/send.png" height="18" width="18">
+                    </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="js/chat.js"></script>
+    </body>
+</html>

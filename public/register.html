@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="flex-center">
+            <div class="border flex-center">
+                <h1>Register</h1>
+                <form id="register_form" action="/register" method="POST" class="flex-column">
+                    <div class="group">
+                        <input type="text" id="first_name" name="first_name" class="input" placeholder="First Name">
+                        <span id="first_name_error"></span>
+                    </div>
+                    <div class="group">
+                        <input type="text" id="last_name" name="last_name" class="input" placeholder="Last Name">
+                        <span id="last_name_error"></span>
+                    </div>
+                    <div class="group">
+                        <input type="text" id="email" name="email" class="input" placeholder="Email">
+                        <span id="email_error"></span>
+                    </div>
+                    <div class="group">
+                        <input type="text" id="username" name="username" class="input" placeholder="Display Name">
+                        <span id="username_error"></span>
+                    </div>
+                    <div class="group">
+                        <input type="password" id="password" name="password" class="input" placeholder="Password">
+                        <span id="password_error"></span>
+                    </div>
+                    <div class="group">
+                        <input type="password" id="confirm_password" name="confirm_password" class="input" placeholder="Confirm Password">
+                        <span id="confirm_password_error"></span>
+                    </div>
+                    <button class="btn-primary">Register</button>
+                </form>
+                <span id="error_code"></span>
+                <a href="/login" class="link">I aleady have an account</a>
+            </div>
+        </div>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/register-form.js"></script>
+    </body>
+</html>
